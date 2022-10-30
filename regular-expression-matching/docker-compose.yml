@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  python:
+    image: python:3.10-slim
+    working_dir: /code
+    command: python -m unittest
+    volumes:
+      - ./python:/code
